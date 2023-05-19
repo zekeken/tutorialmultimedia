@@ -1,0 +1,134 @@
+<htmL>
+<head>
+
+<title>MULTIMEDIA</title>
+
+<link rel="stylesheet" type="text/css" href="ASSET\CSS\style.css">
+<a name="Top_Page"> </a>
+
+<h1>VINLAND SAGA</h1>
+</head>
+<body>
+
+<!--- INSERTING VIDEO --->
+<center>
+<video controls autoplay muted>
+<source src="ASSET/VIDEO/vinlandsaga.mp4" type="video/mp4">
+</video>
+
+<br><br><br><br>
+<center>
+<video controls>
+<source src="ASSET/VIDEO/thorfinn.mp4" type="video/mp4">
+</video>
+
+<br><br><br><br>
+
+<hr>
+
+<!--- APPLYING MARQUEE ---> 
+<marquee scrollamount="20">
+YOU HAVE NO ENEMIES. NO ONE... HAS ANY ENEMIES. THERE IS NO ONE THAT YOU SHOULD HURT
+</marquee>
+
+<hr>
+<br><br><br><br>
+
+<!--- EMBEDDED YOUTUBE VIDEO ---> 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/c7k7LRjMTbI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+<br><br><br><br>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Rl1ImG2b1k8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+<br><br><br><br>
+
+<!--- INSERTING AUDIO --->
+<hr color="red">
+<hr color="red">
+<br><br>
+
+<audio controls>
+<source src="ASSET/AUDIO/AHHHHH.mp3" type="audio/mp3">
+</audio>
+<br><br><br>
+<audio controls>
+<source src="ASSET/AUDIO/hi.mp3" type="audio/mp3">
+</audio>
+<br><br><br>
+<audio controls>
+<source src="ASSET/AUDIO/MaxwellCat.mp3" type="audio/mp3">
+</audio>
+<br><br><br>
+<audio controls>
+<source src="ASSET/AUDIO/tutu.mp3" type="audio/mp3">
+</audio>
+<br><br><br>
+<audio controls>
+<source src="ASSET/AUDIO/Yee.mp3" type="audio/mp3">
+</audio>
+
+<br><br><br>
+<hr color="red">
+<hr color="red">
+
+<br><br><br>
+
+<!--- EMBEDDING PDF FILE --->
+<iframe src="ASSET/PDF/guideline311ind.pdf" width="80%" height="800px">
+</iframe>
+
+<br><br><br>
+<hr color="red">
+<hr color="red">
+
+<br><br><br>
+<!---JAVA APPLET---> 
+
+<!---to call the css---> 
+
+   <div id="clock"> 8:10:45 </div>
+
+<!---to link to the current time---> 
+ 
+   <script src="clock2.js"></script>
+
+<script> 
+setInterval(showTime, 1000);
+function showTime() {
+  let time = new Date();
+  let hour = time.getHours();
+  let min = time.getMinutes();
+  let sec = time.getSeconds();
+  am_pm = "AM";
+
+  if (hour > 12) {
+    hour -= 12;
+    am_pm = "PM";
+  }
+  if (hour == 0) {
+    hr = 12;
+    am_pm = "AM";
+  }
+
+  hour = hour < 10 ? "0" + hour : hour;
+  min = min < 10 ? "0" + min : min;
+  sec = sec < 10 ? "0" + sec : sec;
+
+  let currentTime = hour + ":"
+      + min + ":" + sec + am_pm;
+
+  document.getElementById("clock")
+      .innerHTML = currentTime;
+}
+showTime();
+
+</script>
+
+<a href="#Top_Page">
+<img src="ASSET/ICON/arrowup.png" width="50px"
+align="right">
+</a>
+
+</body>
+</html>

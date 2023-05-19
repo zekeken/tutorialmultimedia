@@ -1,0 +1,39 @@
+body {
+  background-color: #202020;
+  margin: 0;
+}
+
+h1 {
+  padding: 60px;
+  text-align: center;
+  background: #800808;
+  color: black;
+  font-size: 70px;
+  font-family: ROG FONTS;
+}
+
+video {
+  width: 800px;
+  height: 400px;
+}
+
+marquee {
+  font-family: ROG FONTS;
+  font-size: 30px;
+  color: #B90E0A;
+  width: 60%;
+  direction: left;
+  height: 100px;
+  background: #767676
+  animation: marquee 10s linear infinite;
+}
+
+#clock {
+   font-size: 100px;
+   font-family: ROG FONTS;
+   width: 900px;
+   margin:200px; 
+   text-align: center;
+   border: 2px solid black;
+   border-radius: 20px;
+}
